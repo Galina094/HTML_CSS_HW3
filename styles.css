@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;       
+}
+
+body{
+    font-family:  'Inter', sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 596.5px);
+    padding-right: calc(50% - 596.5px);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.header_logo{
+    height: 200px;
+    width: 200px;
+    
+}
+
+.header_logo>span{
+    color: #F25822;
+}
+
+.nav_menu{    
+    margin-top: 51px;    
+    margin-bottom: 63px;    
+    background: #FFF;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.link_menu>span{
+    color: #F25822;
+}
+
+.link_menu{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 10px;
+    
+}
+
+.header_button{
+    border-radius: 30px;
+    background: #F25822;
+    flex-shrink: 10px;
+    padding: 12px 27px 13px 27px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFF;
+    margin-top: 52px;
+    /* margin-left: 402px; */
+    
+}
+
+/* .top_content{
+    margin: 155px 425px 20px 266px;    
+} */
+
+.top_text{
+    height: 543px;
+    width: 374px;
+}
+
+.top_img{   
+    height: 610px;
+    width: 372px;
+    padding: 0 0 0 300px;
+}
+
+.top_content{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.top_content_text{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #888;
+    font-weight: lighter;
+}
+
+
+
+.top_content_button{
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFF;
+    padding: 15px 35px;
+}
+
+.top_content_button2{
+    border-radius: 50px;
+    background: white;
+    /* box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20); */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #AAA;
+    margin: 20px 20px;
+    border-style: none;
+    align-items: center;
+
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+
+
+

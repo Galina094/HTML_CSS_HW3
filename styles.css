@@ -3,8 +3,28 @@
     padding: 0;       
 }
 
+@font-face{
+    font-family:"Gilroy-Bold";
+    src: url(./font/Gilroy-Bold.ttf);    
+}
+
+@font-face{
+    font-family:"Gilroy-Heavy";
+    src: url(./font/Gilroy-Heavy.ttf);    
+}
+
+@font-face{
+    font-family:"Gilroy-Medium";
+    src: url(./font/Gilroy-Medium.ttf);    
+}
+
+@font-face{
+    font-family:"Gilroy-Regular";
+    src: url(./font/Gilroy-Regular.ttf);    
+}
+
 body{
-    font-family:  'Inter', sans-serif;
+    font-family: "Gilroy-Bold";
 }
 
 .center{
@@ -17,28 +37,28 @@ a{
     text-decoration: none;
 }
 
-.header_logo{
-    height: 200px;
-    width: 200px;
-    
+.img_header{
+    width: 35px;
+    height: 40px;        
 }
 
 .header_logo>span{
-    color: #F25822;
+    color: #F25822;    
 }
 
-.nav_menu{    
+.nav_menu{  
+    font-family: "Gilroy-Medium";  
     margin-top: 51px;    
     margin-bottom: 63px;    
     background: #FFF;
     text-align: center;
     display: flex;
     align-items: baseline;
-    gap: 30px;
+    justify-content: space-between;        
 }
 
 .link_menu>span{
-    color: #F25822;
+    color: #F25822;    
 }
 
 .link_menu{
@@ -48,7 +68,9 @@ a{
     font-weight: 400;
     line-height: normal;
     margin: 0px 10px;
-    
+    width: 533px;
+    height: 17px;
+    gap: 35px;    
 }
 
 .header_button{
@@ -60,45 +82,61 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: #FFFFFF;
-    margin-top: 52px;
-    /* margin-left: 402px; */
+    color: #FFFFFF;    
+    width: 120px;
+    height: 40px;
+    flex-shrink: 0; 
     
-}
-
-/* .top_content{
-    margin: 155px 425px 20px 266px;    
-} */
-
-.top_text{
-    height: 543px;
-    width: 374px;
-}
-
-.top_img{   
-    height: 610px;
-    width: 372px;
-    padding: 0 0 0 300px;
 }
 
 .top_content{
     display: flex;
     justify-content: center;
-
     flex-wrap: wrap;
     align-items: center;
+    /* width: 1920px; */
+    padding-left: 500px;
+}
+
+.top_text{
+    height: 222px;
+    width: 550px;
+}
+
+.top_h1{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top_img{   
+
+    width: 544.814px;
+    height: 374.843px;
+    flex-shrink: 0;
+    padding-left:40px;
+   
 }
 
 .top_content_text{
+    font-family: "Gilroy-Medium";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: #888;
-    font-weight: lighter;
+    font-weight: lighter;  
+    margin: 17px 0 37px 0; 
 }
 
-
+.top_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .top_content_button{
     border-radius: 50px;
@@ -121,18 +159,92 @@ a{
     font-weight: 400;
     line-height: normal;
     color: #AAA;
-    margin: 20px 20px;
+    padding: 15px 35px;    
     border-style: none;
-    align-items: center;
-
+    gap: 10px;
+    /* align-items: center; */
+    /* text-align: center; */
 }
+
+
 
 .footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;    
+    padding-top: 197px;
+    padding-bottom: 96px;    
+}
+
+
+
+.content{
+    display: flex;
+    align-items: center;
+    height: 540px;
+    background: #FAFAFA;
+}
+
+.content_solution{
+    color: #000;    
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 409px;
+    height: 112px;
     
 }
+
+.content_solution_text{
+    color: #666;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 20px 0 35px 0;
+    width: 515px;
+    height: 72px;
+}
+
+.content_solution_button{
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.vector1{
+  position: absolute;
+  top: 1100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+.vector2{
+  position: absolute;
+  top: 700px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
 
 
 

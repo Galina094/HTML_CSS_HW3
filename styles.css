@@ -3,6 +3,8 @@
     padding: 0;       
 }
 
+
+
 @font-face{
     font-family:"Gilroy-Bold";
     src: url(./font/Gilroy-Bold.ttf);    
@@ -28,8 +30,8 @@ body{
 }
 
 .center{
-    padding-left: calc(50% - 596.5px);
-    padding-right: calc(50% - 596.5px);
+    padding-left: calc(50% - 960px);
+    padding-right: calc(50% - 960px);
 }
 
 
@@ -37,24 +39,27 @@ a{
     text-decoration: none;
 }
 
+
+
 .img_header{
     width: 35px;
-    height: 40px;        
+    height: 40px;                
 }
 
 .header_logo>span{
     color: #F25822;    
+    margin:0 346px 0 0;
 }
 
 .nav_menu{  
     font-family: "Gilroy-Medium";  
     margin-top: 51px;    
-    margin-bottom: 63px;    
+    margin-bottom: 63px;   
     background: #FFF;
     text-align: center;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;        
+    justify-content: center;        
 }
 
 .link_menu>span{
@@ -74,6 +79,8 @@ a{
 }
 
 .header_button{
+
+    margin: 0 0 0 34px;
     border-radius: 30px;
     background: #F25822;
     flex-shrink: 10px;
@@ -94,11 +101,11 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    /* width: 1920px; */
-    padding-left: 500px;
+    
 }
 
 .top_text{
+    
     height: 222px;
     width: 550px;
 }
@@ -128,6 +135,8 @@ a{
     color: #888;
     font-weight: lighter;  
     margin: 17px 0 37px 0; 
+    width: 466px;
+    height: 48px;
 }
 
 .top_buttons{
@@ -159,11 +168,14 @@ a{
     font-weight: 400;
     line-height: normal;
     color: #AAA;
-    padding: 15px 35px;    
+    padding: 15px 45px;    
     border-style: none;
-    gap: 10px;
-    /* align-items: center; */
-    /* text-align: center; */
+    gap: 15px;
+   
+}
+
+.but_play{
+    margin: 0 10px 0 0;
 }
 
 
@@ -171,29 +183,45 @@ a{
 .footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;    
+    justify-content: center;   
+    gap: 100px; 
     padding-top: 197px;
     padding-bottom: 96px;    
 }
 
 
 
-.content{
+
+
+.content_part_first_solution{
+    /* max-width: 100vw; */
     display: flex;
     align-items: center;
-    height: 540px;
+    justify-content: center;
+    /* height: 540px; */
     background: #FAFAFA;
+    position: relative;
+    z-index: 0;
+    
 }
 
-.content_solution{
+.content_part_first{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-start; */
+    gap: 30px;
+    margin-left: 10vw;
+}
+
+.h1_content_solution{
     color: #000;    
     font-size: 45px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 409px;
-    height: 112px;
-    
+    height: 112px;    
 }
 
 .content_solution_text{
@@ -222,28 +250,190 @@ a{
     line-height: normal;
 }
 
+.content_solution_img{
+    padding-right: 200px;
+    width: 800px;
+    height: 600px;
+}
+
+.vector img{
+    position: absolute; 
+    width: 100vw;      
+}
+
+.vector1{  
+  top:0;
+  left: 0; 
+  z-index: -1;  
+}
+
+.vector2{  
+  top: -275px;
+  left: 0; 
+  z-index: -1;  
+}
 
 
-.vector1{
-  position: absolute;
-  top: 1100px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
+
+
+
+
+.content_part_second{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 290px;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.vector2{
-  position: absolute;
-  top: 700px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
+
+.img_part_second{
+    width: 70px;
+    height: 70px;
+    margin: 40px 270px 40px 30px ;
 }
+
+.text_grow{
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.link_grow_business{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+    
+}
+
+.h3_grow_business{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.get_ideas{
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+.content_part_third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+
+}
+
+.h1_part_third{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 579px;
+    height: 56px;
+    padding: 0 0 0 50px;
+
+}
+
+.content_text_part_third{
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    width: 682px;
+    height: 48px;
+}
+
+
+.img_content_third{
+    display: flex;
+    grid-template-columns: 370px 370px 370px;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 54px;
+    margin-bottom: 10px;
+    width: 370px;
+    height: 549px;
+
+}
+
+.img_keyword{
+    width: 400px;
+    height: 300px;
+}
+
+.h3_part_third{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.p_third{
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+}
+
+.button_third{
+
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: #F25822;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.5px */
+}
+
+.keyword{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+/* @media (max-width:1024px){
+    .top_content center{
+
+    }
+} */
 
 
 
